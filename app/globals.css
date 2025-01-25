@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+ 
 @layer base {
   :root {
     --background: 44 70% 96%;
@@ -25,7 +25,7 @@
     --ring: 24 69.9% 56.9%;
     --radius: 0.5rem;
   }
-
+ 
   .dark {
     --background: 20 14.3% 4.1%;
     --foreground: 60 9.1% 97.8%;
@@ -48,22 +48,28 @@
     --ring: 20.5 90.2% 48.2%;
   }
 }
-
+ 
 @layer base {
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
-    background: 
-      linear-gradient(150deg, rgba(242, 233, 222, 0.2), transparent 50%),
-      linear-gradient(210deg, rgba(242, 233, 222, 0.2), transparent 50%),
-      theme("colors.ossan.background");
+    background-image: 
+      linear-gradient(150deg, theme('colors.ossan.shadow'), transparent 30%),
+      linear-gradient(210deg, theme('colors.ossan.shadow'), transparent 30%),
+      radial-gradient(circle at 50% -100%, transparent 0%, transparent 85%, theme('colors.ossan.luminescence') 100%),
+      linear-gradient(180deg, theme('colors.ossan.background'), theme('colors.ossan.background'));
     background-attachment: fixed;
   }
+}
+
+@layer utilities {
+  .glass-effect {
+    @apply bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg;
+  }
   
-  .ossan-header-footer {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
-    backdrop-filter: blur(5px);
+  .gradient-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-ossan-strong to-ossan-choice;
   }
 }
