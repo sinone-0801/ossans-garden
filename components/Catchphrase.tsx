@@ -2,11 +2,11 @@ import ResponsiveText from "@/components/ResponsiveText"
 
 export default function Catchphrase() {
     return (
-      <ResponsiveText>
       
       <section className="bg-gradient-to-b from-ossan-box to-ossan-background py-16 px-4">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-ossan-strong mb-8 font-serif text-center leading-tight">
+        <ResponsiveText>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-ossan-strong mb-8 font-serif text-center leading-tight">
           <span className="word-wrapper whitespace-pre">おっさんの</span>
           <span className="word-wrapper whitespace-pre">おっさんによる</span>
           <span className="word-wrapper whitespace-pre">おっさんの</span>
@@ -28,9 +28,9 @@ export default function Catchphrase() {
         <span className="word-wrapper whitespace-pre">考えつつ、</span>
         <span className="word-wrapper whitespace-pre">楽しんでいます</span>
         </p>
+        </ResponsiveText>
         </div>
       </section>
-      </ResponsiveText>
     )
   }
   
