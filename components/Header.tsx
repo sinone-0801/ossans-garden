@@ -16,14 +16,14 @@ const navItems = [
 export default function Header() {
   return (
     <header className="w-full bg-ossan-header-footer">
+      <Image
+        src="/ossans-garden/images/header-image.png"
+        alt="おっさんず・ガーデン"
+        width={1920}
+        height={512}
+        className="w-full h-auto max-h-[512px] object-cover"
+      />
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Image
-          src="/ossans-garden/images/header-image.png"
-          alt="おっさんず・ガーデン"
-          width={150}
-          height={50}
-          className="h-12 w-auto object-contain"
-        />
         <nav className="hidden md:flex space-x-4">
           {navItems.map((item) => (
             <Link
