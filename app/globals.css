@@ -56,27 +56,14 @@
   body {
     @apply bg-background text-foreground;
     background: 
-      linear-gradient(150deg, rgba(242, 233, 222, 0.3), transparent 60%),
-      linear-gradient(210deg, rgba(242, 233, 222, 0.3), transparent 60%),
-      radial-gradient(circle at 50% -100%, rgba(255, 247, 237, 0.4) 0%, transparent 50%),
-      radial-gradient(circle at 0% 0%, rgba(255, 247, 237, 0.3) 0%, transparent 40%),
-      radial-gradient(circle at 100% 0%, rgba(255, 247, 237, 0.3) 0%, transparent 40%),
-      linear-gradient(180deg, theme("colors.ossan.background"), theme("colors.ossan.background"));
+      linear-gradient(150deg, rgba(242, 233, 222, 0.2), transparent 50%),
+      linear-gradient(210deg, rgba(242, 233, 222, 0.2), transparent 50%),
+      theme("colors.ossan.background");
     background-attachment: fixed;
   }
-
-  .hero-gradient {
-    background: linear-gradient(to bottom, 
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.8) 100%
-    );
-  }
-
-  .card-gradient {
-    background: linear-gradient(145deg,
-      rgba(255, 255, 255, 0.6),
-      rgba(255, 255, 255, 0.3)
-    );
-    backdrop-filter: blur(10px);
+  
+  .ossan-header-footer {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    backdrop-filter: blur(5px);
   }
 }
