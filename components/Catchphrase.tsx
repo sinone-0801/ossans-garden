@@ -9,15 +9,14 @@ export default function Catchphrase() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-ossan-strong mb-8 font-serif text-center leading-tight">
           <span className="word-wrapper whitespace-pre">おっさんの</span>
           <span className="word-wrapper whitespace-pre">おっさんによる</span>
-          <span className="word-wrapper whitespace-pre">おっさんのための</span>
+          <span className="word-wrapper whitespace-pre">おっさんの</span>
+          <span className="word-wrapper whitespace-pre">ための</span>
           <span className="word-wrapper whitespace-pre">ガーデン</span>
         </h2>
         <p className="mb-6 text-lg md:text-xl lg:text-2xl text-ossan-text text-center leading-relaxed">
           <span className="word-wrapper whitespace-pre">「やりたいときに、</span>
           <span className="word-wrapper whitespace-pre">やりたいことを、</span>
           <span className="word-wrapper whitespace-pre">やりたいだけやる」を</span>
-          <span className="word-wrapper whitespace-pre">スローガンにして、</span>
-          <span className="word-wrapper whitespace-pre">スローガンにして、</span>
           <span className="word-wrapper whitespace-pre">スローガンにして、</span>
           <span className="word-wrapper whitespace-pre">自然発生した</span>
           <span className="word-wrapper whitespace-pre">おっさんず</span>
