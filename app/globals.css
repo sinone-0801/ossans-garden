@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
 @layer base {
   :root {
     --background: 44 70% 96%;
@@ -25,7 +25,7 @@
     --ring: 24 69.9% 56.9%;
     --radius: 0.5rem;
   }
- 
+
   .dark {
     --background: 20 14.3% 4.1%;
     --foreground: 60 9.1% 97.8%;
@@ -48,19 +48,25 @@
     --ring: 20.5 90.2% 48.2%;
   }
 }
- 
+
 @layer base {
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
-    background-image: 
-      linear-gradient(150deg, theme('colors.ossan.shadow'), transparent 30%),
-      linear-gradient(210deg, theme('colors.ossan.shadow'), transparent 30%),
-      radial-gradient(circle at 50% -100%, transparent 0%, transparent 85%, theme('colors.ossan.luminescence') 100%),
-      linear-gradient(180deg, theme('colors.ossan.background'), theme('colors.ossan.background'));
+    background-image: linear-gradient(150deg, theme("colors.ossan.shadow"), transparent 30%),
+      linear-gradient(210deg, theme("colors.ossan.shadow"), transparent 30%),
+      radial-gradient(circle at 50% -100%, transparent 0%, transparent 85%, theme("colors.ossan.luminescence") 100%),
+      linear-gradient(180deg, theme("colors.ossan.background"), theme("colors.ossan.background"));
     background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    flex-grow: 1;
   }
 }
 
@@ -68,8 +74,9 @@
   .glass-effect {
     @apply bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg;
   }
-  
+
   .gradient-text {
     @apply text-transparent bg-clip-text bg-gradient-to-r from-ossan-strong to-ossan-choice;
   }
 }
+

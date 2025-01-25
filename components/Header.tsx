@@ -1,8 +1,7 @@
-import Image from "next/image";
-import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/components/ui/sheet";
-import { Menu } from "lucide-react";
-import Link from "next/link";
-import ResponsiveText from "@/components/ResponsiveText"
+import Image from "next/image"
+import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/components/ui/sheet"
+import { Menu } from "lucide-react"
+import Link from "next/link"
 
 const navItems = [
   { name: "ホーム", href: "/" },
@@ -12,14 +11,12 @@ const navItems = [
   { name: "おっさんずラボ", href: "#ossan-lab" },
   { name: "おっさんずソーイング", href: "#ossan-sewing" },
   { name: "おっさんずモーター", href: "#ossan-motor" },
-];
+]
 
 export default function Header() {
   return (
-    <ResponsiveText>
-
-    <header className="w-full bg-ossan-header-footer">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+    <header className="bg-ossan-header-footer">
+      <div className="container mx-auto flex justify-between items-center">
         <nav className="hidden md:flex space-x-4">
           {navItems.map((item) => (
             <Link
@@ -33,11 +30,11 @@ export default function Header() {
         </nav>
 
         <Sheet>
-        <SheetTrigger asChild>
+          <SheetTrigger asChild>
             <button className="md:hidden">
-                <Menu className="h-6 w-6 text-ossan-text" />
+              <Menu className="h-6 w-6 text-ossan-text" />
             </button>
-        </SheetTrigger>
+          </SheetTrigger>
 
           <SheetContent side="right">
             <SheetHeader className="sr-only">
@@ -65,6 +62,6 @@ export default function Header() {
         className="w-full h-auto max-h-[512px] object-cover"
       />
     </header>
-    </ResponsiveText>
-  );
+  )
 }
+
