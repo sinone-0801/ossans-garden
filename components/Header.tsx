@@ -28,13 +28,6 @@ export default function Header() {
             </Link>
           ))}
         </nav>
-        <Image
-          src="/ossans-garden/images/header-image.png"
-          alt="おっさんず・ガーデン"
-          width={1920}
-          height={512}
-          className="w-full h-auto max-h-[512px] object-cover"
-        />
 
         <Sheet>
         <SheetTrigger asChild>
@@ -61,6 +54,13 @@ export default function Header() {
           </SheetContent>
         </Sheet>
       </div>
+      <Image
+        src="/ossans-garden/images/header-image.png"
+        alt="おっさんず・ガーデン"
+        width={1920}
+        height={512}
+        className="w-full h-auto max-h-[512px] object-cover"
+      />
     </header>
   );
 }
