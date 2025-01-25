@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import Link from "next/link";
+import ResponsiveText from "@/components/ResponsiveText"
 
 const navItems = [
   { name: "ホーム", href: "/" },
@@ -15,6 +16,8 @@ const navItems = [
 
 export default function Header() {
   return (
+    <ResponsiveText>
+
     <header className="w-full bg-ossan-header-footer">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <nav className="hidden md:flex space-x-4">
@@ -62,5 +65,6 @@ export default function Header() {
         className="w-full h-auto max-h-[512px] object-cover"
       />
     </header>
+    </ResponsiveText>
   );
 }

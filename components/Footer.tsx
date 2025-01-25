@@ -1,7 +1,10 @@
 import Link from "next/link"
+import ResponsiveText from "@/components/ResponsiveText"
 
 export default function Footer() {
   return (
+    <ResponsiveText>
+
     <footer className="bg-ossan-header-footer text-ossan-text py-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center md:flex-row md:justify-between md:items-start gap-8">
@@ -20,5 +23,6 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+    </ResponsiveText>
   )
 }

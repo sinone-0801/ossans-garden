@@ -1,4 +1,6 @@
 import Image from "next/image"
+import ResponsiveText from "@/components/ResponsiveText"
+
 interface ServiceCategoryProps {
   title: string
   image: string
@@ -8,6 +10,8 @@ interface ServiceCategoryProps {
 
 export default function ServiceCategory({ title, image, services, id }: ServiceCategoryProps) {
   return (
+    <ResponsiveText>
+
     <div
       id={id}
       className="bg-ossan-box rounded-lg shadow-md overflow-hidden flex flex-col md:flex-row"
@@ -36,5 +40,6 @@ export default function ServiceCategory({ title, image, services, id }: ServiceC
         </ul>
       </div>
     </div>
+    </ResponsiveText>
   )
 }
