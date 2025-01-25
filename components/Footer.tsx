@@ -23,7 +23,7 @@ export default function Footer() {
             <p>メール: XXX-XXXX-XXXX</p>
           </div>
         </div>
-        <div className="mt-8 text-center">
+        <div className="mt-4 text-center">
           <p className="text-sm">
           <span className="word-wrapper whitespace-pre">&copy; 2024 </span>
           <span className="word-wrapper whitespace-pre">おっさんず・ガーデン. </span>
